@@ -33,7 +33,7 @@ steps:
       - |
         source /workspace/build.env
         TAG="$${TAG_NAME}-${COMMIT_SHA}"
-        IMAGE="us-central1-docker.pkg.dev/mikoshi-prod/cloud-run-source-deploy/personal-site/personal-site:${COMMIT_SHA}"
+        IMAGE="us-central1-docker.pkg.dev/personal-website-480904/cloud-run-source-deploy/personal-site/personal-site:${COMMIT_SHA}"
         echo "Building image: $$IMAGE"
         docker build --platform linux/amd64 --file Dockerfile -t $$IMAGE .
         echo "Pushing image: $$IMAGE"
@@ -62,5 +62,5 @@ steps:
 
 timeout: 600s
 
-logsBucket: gs://mikoshi-prod-build-logs/personal-site
+logsBucket: gs://personal-website-480904-build-logs/personal-site
 
