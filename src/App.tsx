@@ -4,9 +4,9 @@ import React from 'react';
 export default function App(): JSX.Element {
   return (
     <div style={{ padding: '2rem', maxWidth: '800px', margin: '0 auto' }}>
-      <h1>Hello, this website belongs to Nikita Olechko.</h1>
-      <p>You can contact me at <a href="mailto:nikita@olechko.me">nikita.olechko@gmail.com</a></p>
-      <p>Imagine there's more stuff here :p</p>
+      <h1>Hello, this website belongs to Nikita Olechko</h1>
+      <p>You can contact me at <a href="mailto:nikita@olechko.me">nikita@olechko.me</a></p>
+      <p>Imagine there's lots of cool stuff here : )</p>
     </div>
   );
 }
